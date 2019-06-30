@@ -3,9 +3,180 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Hello world!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha256-9mbkOfVho3ZPXfM7W8sV2SndrGDuh7wuyLjtsWeTI1Q=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Thoanny | Geek, gamer et streamer débutant de 30 ans</title>
   </head>
   <body>
-    <h1>Hello world!</h1>
+
+    <div class="ui violet large inverted pointing fixed top menu">
+      <div class="ui container">
+
+        <a class="item"><img src="assets/img/logo.jpg" class="ui rounded mini image" /></a>
+        <a class="item" href="#twitch">Twitch</a>
+        <a class="item" href="#facebook">Facebook</a>
+        <a class="item" href="#merci">Merci</a>
+        <a class="item" href="#soutenir">Soutenir</a>
+        <div class="right item">
+          <a class="ui inverted button icon" href="https://www.twitch.tv/thoanny" target="_blank"><i class="twitch icon left"></i> Thoanny</a>
+          <a class="ui inverted button icon" href="https://www.facebook.com/ThoannyLive" target="_blank"><i class="facebook f icon left"></i>ThoannyLive</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="ui violet inverted vertical masthead center aligned segment" id="header">
+
+      <div class="ui text container">
+        <h1 class="ui inverted header">Thoanny</h1>
+        <h2>Geek, gamer et streamer débutant de 30&nbsp;ans.</h2>
+      </div>
+
+    </div>
+
+    <div id="twitch" class="anchor"></div>
+
+    <div class="ui grid stackable container mt5em">
+      <div class="row">
+        <div class="column">
+          <h2 class="ui header"><i class="twitch violet icon"></i> En live, sur Twitch</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column twelve wide" id="twitch">
+          <div id="thoanny-twitch-live" class="video">
+            <iframe src="https://player.twitch.tv/?allowfullscreen&channel=thoanny" width="100%" height="100%" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+          </div>
+        </div>
+        <div class="column four wide">
+          <div id="thoanny-twitch-events"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="facebook" class="anchor"></div>
+
+    <div class="ui middle aligned stackable grid container mb5em mt5em">
+      <div class="row">
+        <div class="six wide column">
+          <!-- https://developers.facebook.com/docs/plugins/page-plugin/ -->
+          <div class="fb-page" data-href="https://www.facebook.com/ThoannyLive/" data-tabs="false" data-width="500" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false" data-hide-cta="true"></div>
+        </div>
+        <div class="ten wide column">
+          <h2 class="ui header"><i class="facebook f icon"></i> En continu sur Facebook</h2>
+          <p>Avec cette page Facebook, je souhaite partager des actualités et contenus sur le thème des jeux vidéo, et pouvoir garder un contact avec les spectateurs que je rencontre pendant mes diffusions en direct, sur Twitch.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="merci" class="anchor"></div>
+
+    <div class="ui inverted center aligned segment" id="thanks">
+      <div class="ui grid container">
+        <div class="row">
+          <div class="column">
+            <h2 class="ui inverted header"><i class="heart icon"></i>Vraiment, merci beaucoup&nbsp;!</h2>
+            <p class="ui text large">C'est toujours un plaisir que j'ai, de partager avec vous mes sessions de jeux et trouvailles.<br />Ces soutiens et dons me permettent d'investir un peu plus sur cette facette de mes activités.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <p>Je tiens à les remercier, pour leurs dons et leur soutien&nbsp;:</p>
+            <div class="ui image big white label">
+              <img src="assets/img/avatars/scannerfax.png" />
+              Pierre <small>(<em>ScannerFax</em>)</small>
+            </div>
+            <div class="ui image big white label">
+              <img src="assets/img/avatars/crowii.jpg" />
+              Crowii
+            </div>
+            <div class="ui image big white label">
+              <img src="assets/img/avatars/gamepac.jpg" />
+              Gamepac15
+            </div>
+            <div class="ui image big white label">
+              <img src="assets/img/avatars/bod.jpg" />
+              Bodking01
+            </div>
+            <div class="ui image big white label">
+              <img src="assets/img/avatars/galapek.png" />
+              Galapek91
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="soutenir" class="anchor"></div>
+
+    <div class="ui text grid container mt5em">
+      <div class="row mb5em">
+        <div class="column center aligned">
+          <h2 class="ui header"><i class="thumbs up green icon"></i>Faire un don</h2>
+          <p>Tu peux soutenir mes activités bénévoles par plusieurs moyens.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="ui quote">
+      <div class="ui equal width stackable internally celled grid">
+        <div class="center aligned row mb5em">
+          <div class="column">
+            <div class="max360px">
+              <div class="ui text">
+                <i class="twitch icon huge violet"></i>
+              </div>
+              <h3>T'abonner sur Twitch</h3>
+              <p>Il existe trois niveaux d'abonnement&nbsp;: <strong>4,99€, 9,99€ et 24,99€ par mois</strong>.</p>
+              <p>Vous ne verrez plus les publicités sur la chaîne, vous débloquerez un badge ainsi qu'une émoticône.</p>
+              <p><em>Si tu as Amazon Prime, tu peux t'abonner gratuitement&nbsp;!</em></p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="max360px">
+              <img src="assets/img/tipeee.png" class="ui centered image" style="height: 56px; width: auto;" alt="">
+              <h3>Devenir Tipeur</h3>
+              <p>J'ai choisi Tipeee comme plateforme alternative d'abonnement, d'abord parce que c'est français, mais aussi parce que tu peux décider toi-même du montant de l'abonnement mensuel.</p>
+              <p>Tu peux aussi découvrir les différents projets sur lesquels j'interviens.</p>
+              <p><a href="https://fr.tipeee.com/thoanny" target="_blank" class="ui green large button">Devenir Tipeur</a></p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="max360px">
+              <img src="assets/img/tipeeestream.png" class="ui centered image" style="height: 56px; width: auto;" alt="">
+              <h3>Faire un don</h3>
+              <p>Pour offrir une solution différente de l'abonnement, j'utilise la plateforme dédiée aux streams et aux dons, de Tipeee.</p>
+              <p>Tu peux aussi participer tout simplement en regardant un ou plusieurs clips vidéo&nbsp;!</p>
+              <p><a href="https://www.tipeeestream.com/thoanny/donation" target="_blank" class="ui green large button">Faire un don</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ui text grid container mt5em">
+
+      <div class="row mb5em">
+        <div class="column center aligned">
+          <p><strong>Tu n'as pas les moyens, mais tu souhaites quand même participer&nbsp;?</strong></p>
+          <p>Passe sur ma chaîne Twitch faire un coucou et suivre la chaîne, visite ma page Facebook, <em>likez</em>-la, laisse un petit mot, un commentaire, regarde un clip sur ma page de don, ... Des petits gestes qui peuvent te sembler insignifiants, mais qui ont de l'importance pour moi.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha256-t8GepnyPmw9t+foMh3mKNvcorqNHamSKtKRxxpUEgFI=" crossorigin="anonymous"></script>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v3.3&appId=437521906391441&autoLogAppEvents=1"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $.get('https://anthony-destenay.fr/projects/twitch/events.php', {'u': 'thoanny', 'format': 'html'}, function(res) {
+          $('#thoanny-twitch-events').html(res);
+        });
+      });
+    </script>
+
   </body>
 </html>
