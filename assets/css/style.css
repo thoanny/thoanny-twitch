@@ -73,6 +73,10 @@ body {
   z-index: 11;
 }
 
+#thoanny-twitch-events #next-event.no-event .overlay {
+  opacity: 1;
+}
+
 #thoanny-twitch-events #next-event {
   width: 100%;
 }
