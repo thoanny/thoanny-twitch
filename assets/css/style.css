@@ -24,6 +24,33 @@ body {
   background-color: #6441a5 !important;
 }
 
+a.violet,
+a.violet:hover,
+a.violet:focus,
+a.violet:active {
+  color: #6441a5 !important;
+  border-bottom: 1px dotted #6441a5;
+  font-weight: bold;
+}
+
+a.facebook,
+a.facebook:hover,
+a.facebook:focus,
+a.facebook:active {
+  color: #3b5998 !important;
+  border-bottom: 1px dotted #3b5998;
+  font-weight: bold;
+}
+
+a.tipeee,
+a.tipeee:hover,
+a.tipeee:focus,
+a.tipeee:active {
+  color: #d84759 !important;
+  border-bottom: 1px dotted #d84759;
+  font-weight: bold;
+}
+
 .video {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
@@ -182,6 +209,20 @@ i.green.icon {
 
 @media screen and (max-width: 991px) {
   .ui.top.menu a.item:not(.logo) {
+    display: none;
+  }
+}
+
+
+.stacked {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .stacked {
+    display: inline;
+  }
+  .not-stacked {
     display: none;
   }
 }
