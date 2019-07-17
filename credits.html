@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf8">
+  <title>Crédits</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Condensed:700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/credits.css" type="text/css">
+  <script type="text/javascript" src="assets/js/jquery.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.titlesequence.js"></script>
+</head>
+<body>
+
+  <div id="titles"></div>
+
+  <div style="display: none;">
+
+    <div id="credits-source">
+
+      <p>Un très grand merci à toutes les personnes qui me soutiennent&nbsp;!</p>
+
+      <h1>Donateurs</h1>
+      <p>GumGum</p>
+      <p>Philou10eme</p>
+      <p>ScannerFax</p>
+
+      <h1 class="alt">Abonnés</h1>
+      <p>kirahonche</p>
+      <p>Galapek91</p>
+      <p>AngieKiller</p>
+      <p>Cabra_Sanguir</p>
+
+      <h1>Followers récents</h1>
+      <p>paulal</p>
+      <p>copalor</p>
+      <p>loukasjak2</p>
+      <p>asy_lum</p>
+      <p>picksel075</p>
+      <p>ThKz_</p>
+      <p>virus906</p>
+      <p>GussFX14</p>
+      <p>Jackherrorrr</p>
+
+      <h1 class="alt">VIP</h1>
+      <p>Crowii75</p>
+      <p>Bodking01</p>
+      <p>galapek91</p>
+      <p>Gamepac15</p>
+      <p>ScannerFax</p>
+
+    </div>
+
+  </div>
+
+  <script type="text/javascript">
+
+    // Run at half speed if called from PhantomJS (see ph-render.js for why)
+    var options = { time_factor: 1 };
+
+    $('#titles').titleSequence([
+        {
+            pause: 800
+        },
+
+        {
+            content: '❤️ Merci, et à bientôt ! ❤️',
+            id: 'the-end',
+            css: {left: '0px', top: '50%', opacity: 0 },
+            animate: { opacity: 1 },
+            duration: 1200,
+            pause: 800
+        },
+
+        {
+            selector: '#the-end',
+            animate: { opacity: 0 },
+            duration: 1200,
+        },
+
+        {
+            delete: '#the-end',
+        },
+
+        {
+            content: $('#credits-source').html(),
+            id: 'credits',
+            css: { top: '100vh', height: '99999px' },
+            animate: { top: '-1500px' },
+            duration: 20000,
+            easing: 'linear'
+        },
+
+        function() {
+            if(console && console.log) {
+                console.log('done');
+            }
+        }
+
+    ], options);
+  </script>
+
+</body>
+</html>
